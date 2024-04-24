@@ -4829,20 +4829,20 @@ end)
     end)
     
  
-    Main:AddToggle("Skill Z",true,function(value)
+    Main:AddToggle("Skill Z",false,function(value)
         _G.SkillZ = value
     end)
  
     
-    Main:AddToggle("Skill X",true,function(value)
+    Main:AddToggle("Skill X",false,function(value)
         _G.SkillX = value
     end)
     
-    Main:AddToggle("Skill C",true,function(value)
+    Main:AddToggle("Skill C",false,function(value)
         _G.SkillC = value
     end)
     
-     Main:AddToggle("Skill V",true,function(value)
+     Main:AddToggle("Skill V",false,function(value)
         _G.SkillV = value
     end)
     
@@ -7010,9 +7010,6 @@ end
         StopTween(_G.AutoBudySword)
     end)
     
-    M:AddToggle("Tự Động Buddy Sword Hop",_G.AutoBudySwordHop,function(value)
-        _G.AutoBudySwordHop = value
-    end)
     
     local BigMomPos = CFrame.new(-731.2034301757812, 381.5658874511719, -11198.4951171875)
     spawn(function()
@@ -7662,9 +7659,6 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
         StopTween( _G.Autotushita)
     end)
     
-    M:AddToggle("Tự Động Tushita Hop", _G.Autotushitahop,function(value)
-         _G.Autotushitahop = value
-    end)
     
     local TushitaPos = CFrame.new(-10238.875976563, 389.7912902832, -9549.7939453125)
     spawn(function()
@@ -7721,9 +7715,6 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
         StopTween( _G.AutoCarvender)
     end)
     
-    M:AddToggle("Tự Động Carvander", _G.AutoCarvenderhop,function(value)
-         _G.AutoCarvenderhop = value
-    end)
     
     local CavandisPos = CFrame.new(5311.07421875, 426.0243835449219, 165.12762451171875)
     spawn(function()
@@ -7822,9 +7813,6 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
         StopTween( _G.AutoTwinHook)
     end)
     
-    M:AddToggle("Tự Động Twin Hook Hop", _G.AutoTwinHook_Hop,function(value)
-         _G.AutoTwinHook_Hop = value
-    end)
     
     local ElephantPos = CFrame.new(-13348.0654296875, 405.8904113769531, -8570.62890625)
     spawn(function()
@@ -8147,9 +8135,6 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    M:AddToggle("Tự Động Elite Hunter Hop",_G.AutoEliteHunterHop,function(value)
-        _G.AutoEliteHunterHop = value
-    end)
     
     M:AddSeperator("ArenaTrainer")
     
@@ -8216,8 +8201,7 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
 		end
 	end)
 	
-	M:AddToggle("Tự Động ArenaTrainer HOP",_G.AutoArenaTrainerHop,function(value)
-        _G.AutoArenaTrainerHop = value
+
     end)
     
     M:AddSeperator("Seperator Hallow Scythe")
@@ -8227,9 +8211,6 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
         StopTween(_G.AutoFarmBossHallow)
     end)
     
-    M:AddToggle("Tự Động Hallow Scythe Hop",_G.AutoFarmBossHallowHop,function(value)
-        _G.AutoFarmBossHallowHop = value
-    end)
     
     spawn(function()
         while wait() do
@@ -8313,19 +8294,6 @@ M:AddToggle("Tự Động Tushita", _G.Autotushita,function(value)
         end)
     end)
     
-    M:AddToggle("Tự Động Kill Admin Boss Hop",_G.AutoDarkDagger_Hop,function(value)
-        _G.AutoDarkDagger_Hop = value
-    end)
-    
-    spawn(function()
-        pcall(function()
-            while wait() do
-                if (_G.AutoDarkDagger_Hop and _G.AutoDarkDagger) and World3 and not game:GetService("ReplicatedStorage"):FindFirstChild("rip_indra True Form [Lv. 5000] [Raid Boss]") and not game:GetService("Workspace").Enemies:FindFirstChild("rip_indra True Form [Lv. 5000] [Raid Boss]") then
-                    Hop()
-                end
-            end
-        end)
-    end)
     
 M:AddToggle("Tự Động Press Haki Button",_G.Farm_Ob_Color,function(vu)
 	Open_Color_Haki = vu
@@ -8374,7 +8342,7 @@ end
 
     M:AddSeperator(" Sea ")
  
-    M:AddToggle('Teleport to Seabaeat', false, function(value)
+    M:AddToggle('Teleport to Seabeast', false, function(value)
     _G.AutoSeaBest = value
     StopTween(_G.AutoSeaBest)
     end)
@@ -8610,9 +8578,6 @@ task.spawn(function()
         StopTween(_G.Auto_Dragon_Trident)
     end)
     
-    M:AddToggle("Tự Động Dragon Trident Hop", _G.Auto_Dragon_Trident_Hop,function(value)
-         _G.Auto_Dragon_Trident_Hop = value
-    end)
     
     local TridentPos = CFrame.new(-3914.830322265625, 123.29389190673828, -11516.8642578125)
     spawn(function()
@@ -8669,9 +8634,6 @@ task.spawn(function()
         StopTween( _G.Autowaden)
     end)
     
-    M:AddToggle("Tự Động Waden Sword Hop", _G.Autowadenhop,function(value)
-         _G.Autowadenhop = value
-    end)
     
     local NamfonPos = CFrame.new(5186.14697265625, 24.86684226989746, 832.1885375976562)
     spawn(function()
@@ -8728,9 +8690,6 @@ task.spawn(function()
         StopTween( _G.Autogay)
     end)
     
-    M:AddToggle("Tự Động Greybeard Hop", _G.AutodoughkingHop,function(value)
-         _G.Autogayhop = value
-    end)
     
     local GayMakPos = CFrame.new(-5023.38330078125, 28.65203285217285, 4332.3818359375)
     spawn(function()
@@ -8787,9 +8746,6 @@ task.spawn(function()
         StopTween( _G.Autopole)
     end)
     
-    M:AddToggle("Tự Động Pole v1 Hop", _G.AutodoughkingHop,function(value)
-         _G.Autopolehop = value
-    end)
      
 local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.898681640625)
     spawn(function()
@@ -8877,9 +8833,6 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
         end)
     end)
     
-    M:AddToggle("Tự Động Swan Glasses Hop",_G.AutoFarmSwanGlasses_Hop,function(value)
-        _G.AutoFarmSwanGlasses_Hop = value
-    end)
     
     M:AddSeperator("Sharks Saw")
     
@@ -8888,9 +8841,6 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
         StopTween( _G.Autosaw)
     end)
     
-    M:AddToggle("Tự Động Shark Saw Hop", _G.AutodoughkingHop,function(value)
-         _G.Autosawhop = value
-    end)
     
     local SharkPos = CFrame.new(-690.33081054688, 15.09425163269, 1582.2380371094)
     spawn(function()
@@ -9070,9 +9020,6 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
 				StopTween(_G.Auto_Saber)
 			end)
 			
-			M:AddToggle("Tự Động Saber Hop",_G.AutoSaberHop,function(value)
-				_G.AutoSaberHop = value
-			end)
 			
  spawn(function()
         while task.wait() do
@@ -9237,9 +9184,6 @@ LegendSwords = M:AddLabel("StatusCheck")
         end
     end)
     
-    M:AddToggle("Tự Động Legendary Sword Hop",_G.AutoBuyLegendarySword_Hop,function(value)
-        _G.AutoBuyLegendarySword_Hop = value
-    end)
     
     M:AddSeperator("Enchancement Colour")
     
@@ -9263,9 +9207,6 @@ ColorHaki = M:AddLabel("")
         _G.AutoBuyEnchancementColour = value
     end)
     
-    M:AddToggle("Tự Động Enchancement Hop",_G.AutoBuyEnchancementColour_Hop,function(value)
-        _G.AutoBuyEnchancementColour_Hop = value
-    end)
     
     spawn(function()
         while wait() do
