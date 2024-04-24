@@ -31,9 +31,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     repeat wait() until game:GetService("Players")
     
     if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") end
-        
     wait(1)
-    
     do
         local ui = game.CoreGui:FindFirstChild("SOMEXGUI")
         if ui then
